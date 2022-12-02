@@ -2,8 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import React from 'react';
+import { NextPage } from 'next';
 
-export default function HomePage() {
+const HomePage: NextPage = () => {
 	return (
 		<div>
 			<div className="card" id="card-photo">
@@ -57,4 +58,5 @@ export default function HomePage() {
 			</div>
 		</div>
 	);
-}
+};
+export default HomePage;
