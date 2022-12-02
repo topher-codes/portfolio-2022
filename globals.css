@@ -69,6 +69,16 @@ li {
 	box-shadow: 4px 4px 10px 1px black;
 }
 
+.blog-post-card {
+	margin-top: 40px;
+	border: 3px solid black;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 4px 4px 10px 1px black;
+	max-width: 50vw;
+}
+
 .card-img {
 	text-align: center;
 }

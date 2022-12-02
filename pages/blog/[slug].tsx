@@ -17,6 +17,7 @@ export default function PostPage({ source, frontMatter }: any) {
 				url={`https://chrisandrews.vercel.app/blog/${slug}`}
 				{...frontMatter}
 			/>
+
 			<MDXRemote {...source} />
 		</div>
 	);
