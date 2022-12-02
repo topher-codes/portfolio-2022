@@ -4,7 +4,7 @@ import React from 'react';
 
 const BlogSEO = ({ title, description, publishedAt, url, image }: any) => {
 	const date = new Date(publishedAt).toDateString();
-	const featuredImage = {
+	const featuredImage: any = {
 		url: `https://example.io/${image}`,
 	};
 	return (
