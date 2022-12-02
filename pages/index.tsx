@@ -3,10 +3,21 @@ import Link from 'next/link';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import React from 'react';
 import { NextPage } from 'next';
+import { NextSeo } from 'next-seo';
+
+const url = 'https://chrisandrews.vercel.app';
+const title = 'Home';
+const description = 'Software Engineer home page';
 
 const HomePage: NextPage = () => {
 	return (
 		<div>
+			<NextSeo
+				title={title}
+				description={description}
+				canonical={url}
+				openGraph={{ url, title, description }}
+			/>
 			<div className="card" id="card-photo">
 				<div className="card-img">
 					<Image
