@@ -13,7 +13,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: #555;
 }
 nav {
 	display: flex;

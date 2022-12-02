@@ -4,10 +4,21 @@ import Link from 'next/link';
 import NextLink from 'next/link';
 import path from 'path';
 import { postFilePaths, POSTS_PATH } from '../lib/mdxUtils';
+import { NextSeo } from 'next-seo';
+
+const url = 'https://chrisandrews.vercel.app/blog';
+const title = 'Blog 🔥';
+const description = 'Software Engineer blog page';
 
 export default function Blog({ posts }: any) {
 	return (
 		<div>
+			<NextSeo
+				title={title}
+				description={description}
+				canonical={url}
+				openGraph={{ url, title, description }}
+			/>
 			<h1>Posts</h1>
 			<ul>
 				{posts.map((post: any) => (

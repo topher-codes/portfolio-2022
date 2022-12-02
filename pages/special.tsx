@@ -10,7 +10,7 @@ export default function SpecialPage() {
 
 	return (
 		<div className="card-body">
-			<h1>Countdown to Miranda's Birthday! ❤️</h1>
+			<h1>Miranda's Birthday! ❤️</h1>
 			<p>(So that I don't make the unforgivable mistake of forgetting 😬)</p>
 			<CountdownTimer targetDate={birthdayTime} />
 		</div>
