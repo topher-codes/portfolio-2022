@@ -16,7 +16,9 @@ export default function Blog({ posts }: any) {
 							as={`/blog/${post.filePath.replace(/\.mdx?$/, '')}`}
 							href={`/blog/[slug]`}
 						>
-							{post.data.title} - {post.data.description}
+							<div className="card">
+								{post.data.title} - {post.data.description}
+							</div>
 						</NextLink>
 					</li>
 				))}
