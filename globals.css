@@ -1,0 +1,160 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 1.5rem;
+}
+.fullscreen {
+	height: 80vh;
+}
+nav {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: #fff;
+	position: fixed;
+	height: 60px;
+	top: 0;
+	left: 0;
+}
+nav a,
+.card-body a,
+#card-about a {
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	margin: 5px 10px;
+	border: 3px solid black;
+	font-family: monospace;
+}
+
+nav a:hover,
+.card-body a:hover,
+#card-about a:hover {
+	transform: translateY(10%);
+	background-color: #555;
+}
+
+h1 {
+	text-align: center;
+}
+
+li {
+	padding: 10px;
+}
+
+.container {
+	display: flex;
+	background-color: #eee;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.card {
+	margin-top: 40px;
+	border: 3px solid black;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 4px 4px 10px 1px black;
+}
+
+.card-img {
+	text-align: center;
+}
+#card-about-stats {
+	text-align: center;
+}
+.card-body {
+	text-align: center;
+	padding: 10px;
+}
+
+.footer {
+	text-align: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form input {
+	height: 40px;
+	font-size: 1.8rem;
+	margin-top: 20px;
+}
+
+.form button {
+	font-size: 1.8rem;
+	border: 3px solid black;
+	margin-top: 20px;
+}
+
+.expired-notice {
+	text-align: center;
+	padding: 2rem;
+	border: 1px solid #ebebeb;
+	border-radius: 0.25rem;
+	margin: 0.5rem;
+}
+
+.expired-notice > span {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: red;
+}
+
+.expired-notice > p {
+	font-size: 1.5rem;
+}
+
+.show-counter {
+	padding: 0.5rem;
+}
+
+.show-counter .countdown-link {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1.75rem;
+	padding: 0.5rem;
+	border: 1px solid #ebebeb;
+	border-radius: 0.25rem;
+	text-decoration: none;
+	color: #000;
+}
+
+.show-counter .countdown {
+	line-height: 3rem;
+	padding: 0 0.75rem 0 0.75rem;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.show-counter .countdown.danger {
+	color: #ff0000;
+}
+
+.show-counter .countdown > p {
+	margin: 0;
+}
+
+.show-counter .countdown > span {
+	text-transform: uppercase;
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+@media (max-width: 500px) {
+	body {
+		font-size: 1.2rem;
+	}
+}
