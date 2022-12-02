@@ -24,6 +24,7 @@ nav {
 	height: 60px;
 	top: 0;
 	left: 0;
+	border-bottom: 3px solid black;
 }
 nav a,
 .card-body a,
@@ -32,15 +33,16 @@ nav a,
 	color: black;
 	padding: 5px;
 	margin: 5px 10px;
-	border: 3px solid black;
+	border: 3px solid #444;
+	border-radius: 5px;
 	font-family: monospace;
 }
 
 nav a:hover,
 .card-body a:hover,
 #card-about a:hover {
-	transform: translateY(10%);
-	background-color: #555;
+	transform: scale(1.1);
+	box-shadow: 2px 2px 4px 5px #555;
 }
 
 h1 {

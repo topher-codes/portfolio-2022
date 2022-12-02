@@ -9,6 +9,7 @@ export default function ProjectPage({ repos }: any) {
 						<p>{p.name}</p>
 						<p>{p.description}</p>
 						<p>Stars: {p.stargazers_count}</p>
+						<p>Language: {p.language}</p>
 					</Link>
 				</div>
 			))}
