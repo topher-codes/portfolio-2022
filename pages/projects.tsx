@@ -8,6 +8,7 @@ export default function ProjectPage({ repos }: any) {
 					<Link href={`/projects/${p.name}`} key={p.name}>
 						<p>{p.name}</p>
 						<p>{p.description}</p>
+						<p>Stars: {p.stargazers_count}</p>
 					</Link>
 				</div>
 			))}
