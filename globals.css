@@ -10,6 +10,11 @@ body {
 .fullscreen {
 	height: 80vh;
 }
+
+a {
+	text-decoration: none;
+	color: black;
+}
 nav {
 	display: flex;
 	width: 100%;
