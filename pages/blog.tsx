@@ -20,20 +20,21 @@ export default function Blog({ posts }: any) {
 				openGraph={{ url, title, description }}
 			/>
 			<h1>Posts</h1>
-			<ul>
-				{posts.map((post: any) => (
-					<li key={post.filePath}>
-						<NextLink
-							as={`/blog/${post.filePath.replace(/\.mdx?$/, '')}`}
-							href={`/blog/[slug]`}
-						>
-							<div className="blog-post-card">
-								{post.data.title} - {post.data.description}
+			{posts.map((post: any) => (
+				<div key={post.filePath}>
+					<NextLink
+						as={`/blog/${post.filePath.replace(/\.mdx?$/, '')}`}
+						href={`/blog/[slug]`}
+					>
+						<div className="blog-post-card">
+							<div>
+								<b>{post.data.title}</b>
 							</div>
-						</NextLink>
-					</li>
-				))}
-			</ul>
+							{post.data.description}
+						</div>
+					</NextLink>
+				</div>
+			))}
 		</div>
 	);
 }
