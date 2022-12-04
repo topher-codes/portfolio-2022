@@ -2,7 +2,6 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
-import dynamic from 'next/dynamic';
 import path from 'path';
 import BlogSEO from '../../components/BlogSEO';
 import { postFilePaths, POSTS_PATH } from '../../lib/mdxUtils';

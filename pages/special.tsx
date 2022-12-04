@@ -1,9 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client';
 
-import { useState } from 'react';
 import CountdownTimer from '../components/CountdownTimer';
-import { useCountdown } from '../components/useCountdown';
 
 export default function SpecialPage() {
 	const birthdayTime = new Date('Jan 13, 2023 00:00:00').getTime();

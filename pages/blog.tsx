@@ -1,6 +1,5 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import Link from 'next/link';
 import NextLink from 'next/link';
 import path from 'path';
 import { postFilePaths, POSTS_PATH } from '../lib/mdxUtils';
