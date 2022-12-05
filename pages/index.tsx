@@ -34,9 +34,12 @@ const HomePage: NextPage = () => {
 						<Link href="https://github.com/halcyon-dayz">
 							<AiFillGithub />
 						</Link>
-						<a href="https://www.linkedin.com/in/chris-andrews-185356259/">
+						<Link
+							href="https://www.linkedin.com/in/chris-andrews-185356259/"
+							target="_blank"
+						>
 							<AiFillLinkedin />
-						</a>
+						</Link>
 						<a href="mailto:andrewsc33@icloud.com">
 							<AiOutlineMail />
 						</a>
