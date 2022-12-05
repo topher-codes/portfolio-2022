@@ -34,7 +34,7 @@ const HomePage: NextPage = () => {
 						<Link href="https://github.com/halcyon-dayz">
 							<AiFillGithub />
 						</Link>
-						<a href="#">
+						<a href="https://www.linkedin.com/in/chris-andrews-185356259/">
 							<AiFillLinkedin />
 						</a>
 						<a href="mailto:andrewsc33@icloud.com">
