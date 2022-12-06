@@ -26,10 +26,15 @@ export default function Blog({ posts }: any) {
 						href={`/blog/[slug]`}
 					>
 						<div className="blog-post-card">
-							<div>
+							<h2>
 								<b>{post.data.title}</b>
-							</div>
-							{post.data.description}
+							</h2>
+
+							<p>{post.data.description}</p>
+							<p className="text-small">
+								Date Published:{' '}
+								{new Date(post.data.publishedAt).toLocaleDateString()}
+							</p>
 						</div>
 					</NextLink>
 				</div>

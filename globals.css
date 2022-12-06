@@ -11,6 +11,10 @@ body {
 	height: 80vh;
 }
 
+.text-small {
+	font-size: 1rem;
+}
+
 a {
 	text-decoration: none;
 	color: #555;
