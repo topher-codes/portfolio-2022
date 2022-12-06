@@ -6,7 +6,11 @@ import path from 'path';
 import BlogSEO from '../../components/BlogSEO';
 import { postFilePaths, POSTS_PATH } from '../../lib/mdxUtils';
 import { useRouter } from 'next/router';
+import Image from '../../components/Image';
 
+const components = {
+	img: Image,
+};
 export default function PostPage({ source, frontMatter }: any) {
 	const router = useRouter();
 	const slug = router.asPath.replace('/blog', '');
@@ -17,7 +21,7 @@ export default function PostPage({ source, frontMatter }: any) {
 				{...frontMatter}
 			/>
 
-			<MDXRemote {...source} />
+			<MDXRemote {...source} components={components} />
 		</div>
 	);
 }
