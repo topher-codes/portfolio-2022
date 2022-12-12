@@ -185,6 +185,10 @@ li {
 	color: #fff;
 }
 
+.blog-container {
+	background: rgba(255, 255, 255, 0.4);
+}
+
 @media (max-width: 500px) {
 	body {
 		font-size: 1.2rem;

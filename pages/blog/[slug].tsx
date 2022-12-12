@@ -15,7 +15,7 @@ export default function PostPage({ source, frontMatter }: any) {
 	const router = useRouter();
 	const slug = router.asPath.replace('/blog', '');
 	return (
-		<div>
+		<div className="blog-container">
 			<BlogSEO
 				url={`https://chrisandrews.vercel.app/blog/${slug}`}
 				{...frontMatter}
