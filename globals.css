@@ -8,10 +8,10 @@ body {
 	font-size: 1.5rem;
 	background: rgb(0, 0, 0);
 	background: linear-gradient(
-		0deg,
+		90deg,
 		rgba(0, 0, 0, 1) 0%,
-		rgba(166, 166, 177, 1) 35%,
-		rgba(192, 217, 222, 1) 100%
+		rgba(192, 217, 222, 1) 50%,
+		rgba(0, 0, 0, 1) 100%
 	);
 }
 .fullscreen {
@@ -30,7 +30,7 @@ nav {
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	background-color: #fff;
+	background: #fff;
 	position: fixed;
 	height: 60px;
 	top: 0;
@@ -186,7 +186,7 @@ li {
 }
 
 .blog-container {
-	background: rgba(255, 255, 255, 0.4);
+	background: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 500px) {
