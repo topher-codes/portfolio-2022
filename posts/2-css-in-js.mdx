@@ -1,0 +1,37 @@
+---
+title: 'CSS-in-JS..? Yes!'
+description: 'This post describes the benefits of using CSS-in-JS libraries'
+publishedAt: '2022-12-12'
+---
+
+# The advantages of using CSS-in-JS libraries
+
+CSS-in-JS libraries, such as styled-components, offer a modern approach to styling React applications. These libraries allow developers to write CSS styles directly in their JavaScript code, allowing for greater flexibility and modularity.
+
+One of the main benefits of using a CSS-in-JS library is that it removes the need for separate CSS files. This means that styles are more closely tied to their corresponding components, making it easier to maintain and update the styles in a large application.
+
+# Javascript in your css!
+
+Another advantage of CSS-in-JS libraries is that they enable developers to use JavaScript features such as variables, functions, and loops in their styles. This allows for greater control and flexibility when defining styles, and can make it easier to create complex designs.
+
+Additionally, CSS-in-JS libraries often come with built-in tools for optimizing and automatically generating unique class names. This can help to prevent conflicts and make it easier to manage the styles in a large application.
+
+To use a CSS-in-JS library in a React application, you can install the library via npm and then import it into your component files. For example, with styled-components, you would import the `styled` function and use it to define a styled component, like so:
+
+Copy code
+
+```typescript
+import styled from 'styled-components';
+
+const Button = styled.button`
+	background-color: blue;
+	color: white;
+	font-size: 16px;
+`;
+```
+
+You can then use this component just like any other React component, with the added benefit of having the defined styles applied to it.
+
+# Conclusion
+
+Overall, using a CSS-in-JS library can offer a number of benefits when working with React applications. These libraries can make it easier to manage and maintain styles, and provide greater flexibility and control when defining styles.
