@@ -193,4 +193,7 @@ li {
 	body {
 		font-size: 1.2rem;
 	}
+	nav a {
+		font-size: 0.9rem;
+	}
 }
