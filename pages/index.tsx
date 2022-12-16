@@ -6,7 +6,7 @@ import { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 
 const url = 'https://chrisandrews.vercel.app';
-const title = 'Chris 🔥';
+const title = 'Chris ';
 const description = 'Software Engineer home page';
 
 const HomePage: NextPage = () => {
