@@ -21,7 +21,7 @@ const HomePage: NextPage = () => {
 			<div className="card" id="card-photo">
 				<div className="card-img">
 					<Image
-						src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/295039461_3274098816179609_5255628418250824421_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4k-mhZ1SlnYAX8rCcCH&_nc_ht=scontent-sea1-1.xx&oh=00_AfAmFohl7GJ2O8KLpi0yaS43g2wK6vEtWcf8PgIEmkqTng&oe=638A6279"
+						src="https://avatars.githubusercontent.com/u/82462768?v=4"
 						width="300"
 						height="300"
 						alt="nothing"
