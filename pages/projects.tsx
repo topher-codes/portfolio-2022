@@ -2,7 +2,6 @@ import Link from 'next/link';
 export default function ProjectPage({ repos }: any) {
 	return (
 		<div>
-			<h1>Projects: {repos.length}</h1>
 			{repos.map((p: any) => (
 				<div className="blog-post-card" key={p.name}>
 					<Link href={`/projects/${p.name}`} key={p.id}>

@@ -18,7 +18,6 @@ export default function Blog({ posts }: any) {
 				canonical={url}
 				openGraph={{ url, title, description }}
 			/>
-			<h1>Posts</h1>
 			{posts.map((post: any) => (
 				<div key={post.filePath}>
 					<NextLink

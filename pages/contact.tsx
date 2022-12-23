@@ -1,7 +1,6 @@
 export default function ContactPage() {
 	return (
 		<div className="fullscreen">
-			<h1>Contact</h1>
 			<div className="card">
 				<form
 					action="https://formsubmit.co/b353fef83470be4f1a87d1d547345d77"
