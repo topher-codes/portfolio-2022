@@ -8,7 +8,7 @@ export default function Navbar({ children }: any) {
 				<Link href="/blog">Blog</Link>
 				<Link href="/projects">Projects</Link>
 				<Link href="/contact">Contact</Link>
-				<Link href="/special">Special ❤️</Link>
+				<Link href="/password">Special ❤️</Link>
 			</nav>
 			<div className="container">{children}</div>
 			<div className="footer">
