@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import type { DetailedHTMLProps, InputHTMLAttributes } from 'react';
 
 const Password = () => {
 	const [password, setPassword] = useState('');
