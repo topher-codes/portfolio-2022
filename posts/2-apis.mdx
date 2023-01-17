@@ -1,0 +1,54 @@
+---
+title: 'Creating API routes in GO'
+description: 'A short post about my backend journey. Today: Setting up API routes to handle a CRUD backend in golang'
+publishedAt: '2023-01-17'
+---
+
+API routes in Golang are a way to handle incoming HTTP requests and respond with appropriate data. In this post, we will go over the basics of creating API routes in Golang using the popular framework, Gin.
+
+First, make sure you have the Gin package installed by running the following command:
+
+```
+go get github.com/gin-gonic/gin
+```
+
+Next, import the package in your main function:
+
+```
+import "github.com/gin-gonic/gin"
+```
+
+You can now create a new router using the gin.Default() function. This will set up a new router with some default middleware, such as logging and recovery.
+
+```
+r := gin.Default()
+```
+
+To handle a specific HTTP method and path, you can use one of the router's methods, such as r.GET(), r.POST(), r.PUT(), etc. Each of these methods takes a path and a function that will be executed when a request matching the method and path is received.
+
+Here is an example of a simple GET route that responds with a "Hello, World!" message:
+
+```r.GET("/hello", func(c *gin.Context) {
+c.JSON(200, gin.H{
+"message": "Hello, World!",
+})
+})
+```
+
+You can also use path parameters by prefixing the parameter name with a colon. For example, the following route will match any GET request to the path "/user/:name" and will provide the name parameter in the function.
+
+```r.GET("/user/:name", func(c *gin.Context) {
+name := c.Param("name")
+c.JSON(200, gin.H{
+"message": "Hello, " + name + "!",
+})
+})
+```
+
+Finally, you can start your server by calling the r.Run() method and passing in the desired host and port.
+
+```r.Run("localhost:8080")
+
+```
+
+With these basics in mind, you can start building your own API routes in Golang. There are many more advanced features such as middleware, query parameter binding, and file uploads, but these will be covered in future posts. Happy coding!
