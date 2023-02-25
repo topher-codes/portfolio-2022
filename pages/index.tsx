@@ -57,14 +57,28 @@ const HomePage: NextPage = () => {
 				<p>
 					<strong>Typescript</strong>: 3 years
 				</p>
-				<p></p>
+				<p>
+					<strong>GO</strong>: 2 years
+				</p>
+				<p>
+					<strong>Python</strong>: 3 years
+				</p>
+				<p>
+					<strong>SQL</strong>: 5 years
+				</p>
+				<p>
+					<strong>GraphQL</strong>: 2 years
+				</p>
+				<p>
+					<strong>NextJS</strong>: 2 years
+				</p>
 			</div>
 			<div className="card" id="card-about">
 				<ul>
-					<li>I can build REST API</li>
+					<li>I can build RESTful API's with end-to-end typesafety</li>
 					<li>I can build 100% typesafe React apps</li>
 					<li>I use SQL backend as well as noSQL / GraphQL</li>
-					<li>I use frameworks such as NextJS</li>
+					<li>I use metaframeworks such as NextJS</li>
 					<li>
 						Check out my <Link href="/projects">projects</Link>!
 					</li>
