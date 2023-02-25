@@ -191,6 +191,10 @@ li {
 	padding: 20px;
 }
 
+.projects {
+	color: #eee;
+}
+
 @media (max-width: 500px) {
 	body {
 		font-size: 1.2rem;

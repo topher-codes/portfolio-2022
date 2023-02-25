@@ -16,10 +16,7 @@ export default function PostPage({ source, frontMatter }: any) {
 	const slug = router.asPath.replace('/blog', '');
 	return (
 		<div className="blog-container">
-			<BlogSEO
-				url={`https://chrisandrews.vercel.app/blog/${slug}`}
-				{...frontMatter}
-			/>
+			<BlogSEO url={`https://topher.codes/blog/${slug}`} {...frontMatter} />
 
 			<MDXRemote {...source} components={components} />
 		</div>

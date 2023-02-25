@@ -3,12 +3,9 @@ export default function ProjectPage({ repos }: any) {
 	return (
 		<div>
 			{repos.map((p: any) => (
-				<div className="blog-post-card" key={p.name}>
+				<div key={p.name}>
 					<Link href={`/projects/${p.name}`} key={p.id}>
-						<p>{p.name}</p>
-						<p>{p.description}</p>
-						<p>Stars: {p.stargazers_count}</p>
-						<p>Language: {p.language}</p>
+						<p className="projects">{p.name}</p>
 					</Link>
 				</div>
 			))}
